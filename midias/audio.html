@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>Audio</h1> 
+   <p>Reproduzir audios</p>
+   <!-- Maneira mais fácil é meter autoplay para começar a tocar automaticamente, mas caso não dê para fazer isso, é melhor usar o controls para mostrar o play, volume etc-->
+   <audio src="exemplo.mp3" controls autoplay></audio>
+   <!-- Outra forma para fazer isso é:-->
+   <audio preload="metadata" controls loop>
+       <source src="exeplo.mp3" type="audio/mpeg">
+       <source src="exemplo.ogg" type="audio/ogg">
+       <source src="exemplo.wav" type="audio/wav"> <!--não usar por ser muito pesado-->
+       <p>Infelizmente o seu navegador não dá para reproduzir audio</p> <!-- Aqui só mostra esta frase se nenhum dos acima funcionar-->
+   </audio>
+</body>
+</html>

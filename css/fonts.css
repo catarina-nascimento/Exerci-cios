@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+/*
+Imaginar que queria importar uma fonte personalizada
+tinha de colocar aqui em cima:
+
+@font-face{
+    font-family: 'nome';
+    src: url(local onde está a fonte.otf) format ('opentype'), url('local da fonte.ttf') format ('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+Depois era só acrescentar o seletor desejado para esta fonte e as devidas propriedades.
+*/
+
+h1{
+    font-family: 'Hurricane', cursive;
+}
+
+
+p{
+    /*
+    Medidas absolutas
+    cm, mm, in, px, pt (word), pc
+
+    Medidas Relativas
+    em, ex, rem, vx, vh, %
+    geralmente, 1em=16px
+    Quase só se usam essas duas medidas
+    */
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+
+    /*ou podemos usar apenas uma shorhand
+    por ordem: font-style, font-weight, font-size e font-family
+    ou seja
+    font: italic, bolder, 1em, 'Work Sans', sans-serif;
+    
+    */
+}

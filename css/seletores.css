@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* 
+id é # 
+é um identificador!
+id é super específico e só pode ser usado num único seletror
+cada seletor só tem um id
+por isso
+id tem prioridade em relação à class
+
+
+class é . 
+pode ser usada em vários locais
+um seletor por ter mais do que uma class
+*/
+
+body{
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(4,109,0);
+}
+
+h2{
+    color: rgb(51,77,49) ;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(4,109,0);
+    color: white;
+}
+
+.basico{
+    color: green;
+}
+
+.intermediario{
+    color: #e9e9368e;
+}
+
+.avancado{
+    color: red;
+}
+
+.destaque{
+    background-color: rgba(175, 175, 74, 0.479);
+}

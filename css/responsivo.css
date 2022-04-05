@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+* {
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --purple: #ca76cad5;
+    --roxo:  #6b0e964d;
+}
+       
+body{
+    background-color: gray;
+}
+
+a.externo::after{
+    content:'\00A0\1F517';
+}
+
+header{
+    background-color: var(--purple);
+    min-height: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+
+}
+
+header > h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px black;
+}
+
+header > p{
+    background-color: rgb(219, 211, 211);
+    box-shadow: 0px 0px 10px black;
+    max-width: 600px;
+    padding: 10px;
+    display:block;
+    margin: 20px auto;
+}
+
+nav{
+    padding: 10px;
+    box-shadow: 4px 2px 5px 2px #18121f9c;
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 20px auto 10px auto;
+}
+
+nav > a{
+    text-decoration: none;
+    padding: 5px;
+    max-width: 150px;
+    color:rgb(219, 211, 211);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-decoration: bold;
+}
+
+nav > a:hover{
+    background-color: var(--roxo);
+    color: rgb(68, 66, 66);
+
+}
+
+
+main{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 500px;
+    max-width: 800px;
+    margin:auto;
+    box-shadow: 0px 0px 10px black;
+
+}
+
+/*Como a imagem é inline (não é um bloco), a margem auto só vai funcionar se colocar display block*/
+main img{
+   display: block;
+   margin:auto;
+}
+
+main h2{
+    font-size: 1.3em;
+    color: rgb(15, 10, 10);
+    background-image: linear-gradient(to right, var(--purple), transparent);
+}
+
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 1em;
+}
+
+aside{
+    background-color: #e5c9f1d7;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 6px;
+    box-shadow: 1px 1px 10px black;
+}
+
+aside > p{
+    margin-top: 10px;
+}
+
+aside > ul{
+    /* 2714 é o codigo para colocar as marcas de check, o 00A0 é para dar o espaço entre a imagem e os itens da lista, para mais espaços colocar mais \00A0 até desejado*/
+    list-style-type: "\2714\00A0";
+    padding:20px;
+    list-style-position: inside;
+    columns: 2;
+}
+
+aside > h3 {
+    background-color: var(--roxo);
+    color: white;
+    padding: 5px;
+    margin: -20px -20px 0px -20px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.video{
+    background-color: var(--purple);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    /*barras pretas do video lateral, muda de video pra video*/
+    padding-bottom: 60%;
+    position: relative;
+}
+
+div.video > iframe{
+    /*dá para mudar as posições top left etc com porcentagens e só se a posição for absoluta*/
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+footer{
+    background-color: #7125c79c;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    margin: 4px 0px;
+}
+
+footer > p{
+    text-align: center;
+    color: white;
+    text-shadow: 7px 3px 7px black;
+}
