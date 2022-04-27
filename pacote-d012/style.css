@@ -68,6 +68,8 @@ section.normal{
 section.imagem{
     background-color: rgb(29, 28, 28);
     color: white;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
@@ -80,7 +82,7 @@ section.imagem > p{
 #img01{
     background-image: url("../pacote-d012/imagens/background001.jpg");
     background-position: right center;
-    background-size: cover;
+    background-size: cover;/*a imagem fica sempre do tamanho da tela*/
 }
 
 #img02{
